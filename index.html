@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles.css">
+    <title>Portfolio</title>
+</head>
+<body class="o-start">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Vishal</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="fa-solid fa-house nav__icon"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="fa-regular fa-address-card nav__icon"></i>
+                                About  
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="fa-solid fa-bars-progress nav__icon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="fa-solid fa-briefcase nav__icon"></i>
+                            Qualification  
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="fa-regular fa-address-book nav__icon"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-xmark nav__close"  id="nav-close" ></i>
+            </div>
+            <div class="nav__btns">
+                <!-- Theme Change button -->
+                <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                    <a href="https://www.linkedin.com/in/vishal-chinta-b207831ba/" target="_blank" class="home__social-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/vishalchinta" target="_blank" class="home__social-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto: vishalchinta27@gmail.com" target="_blank" class="home__social-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    </div>
+                    <div class="home__img">
+                            <image class="home__blob-img" src="assets/avatar.png"></image>
+
+                        <!-- <svg class="home__blob" id="10015.io" viewBox="0 0 2400 2280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	                        <path class="home__blob-svg" fill="#474bff" d="M347,345Q308,450,214.5,388.5Q121,327,120.5,240Q120,153,212.5,96Q305,39,345.5,139.5Q386,240,347,345Z" />
+                        </svg> -->
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'am Vishal</h1>
+                        <h3 class="home__subtitle">Full stack developer</h3>
+                        <p class="home__description">High level experience in full stack development</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="message"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+            <div class="about__container container grid">
+                <img src="" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        Full stack developer
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">08+</span>
+                            <span class="about__info-name">Years <br>experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">1+</span>
+                            <span class="about__info-name">Completed <br>projects</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">02+</span>
+                            <span class="about__info-name">Companies <br>Worked</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a href="" class="button button--flex">
+                            Download<i class="fa-solid fa-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="fa-solid fa-code skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Frontend developer</h1>
+                                <span class="skills__subtitle">More than 1 years</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">JS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">React js</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========Skills 2========== -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fa-solid fa-server skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">Backend developer</h1>
+                                <span class="skills__subtitle">More than 1 years</span>
+                            </div>
+
+                            <i class="fa-solid fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">C#</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__csharp"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__sql"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">MVC</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__mvc"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Linq</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__linq"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>  
+
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex" data-target="#education">
+                        <i class="fa fa-cap qualification__icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#work" >
+                        <i class="fa fa-cap qualification__icon"></i>
+                        Work
+                    </div>
+                </div>
+                <div class="qualifcation__sections">
+                    <!-- ============================Qualification Content ========================== -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- ============================= Qualification 1=========================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">AES high school</h3>
+                                <span class="qualification__subtitle">Lala Lajpatrai college</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2016-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <div class="qualification__line"></div>
+                            </div>
+                        </div>
+                        <!-- ============================= Qualification 1=========================== -->
+                        <div class="qualification__data">
+                             <div></div>
+                         <div>
+                            <span class="qualification__rounder"></span>
+                            <div class="qualification__line"></div>
+                        </div>
+                            <div>
+                                <h3 class="qualification__title">Bsc It</h3>
+                                <span class="qualification__subtitle">Lala Lajpatrai college</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2016-2019
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================= Qualification 1=========================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bsc It</h3>
+                                <span class="qualification__subtitle">Lala Lajpatrai college</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2016-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ===============================Work 1================== -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- ============================= Qualification 1=========================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bsc It</h3>
+                                <span class="qualification__subtitle">Lala Lajpatrai college</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2016-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <div class="qualification__line"></div>
+                            </div>
+                        </div>
+                        <!-- ============================= Qualification 1=========================== -->
+                        <div class="qualification__data">
+                             <div></div>
+                         <div>
+                            <span class="qualification__rounder"></span>
+                            <div class="qualification__line"></div>
+                        </div>
+                            <div>
+                                <h3 class="qualification__title">Bsc It</h3>
+                                <span class="qualification__subtitle">Lala Lajpatrai college</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2016-2019
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================= Qualification 1=========================== -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Bsc It</h3>
+                                <span class="qualification__subtitle">Lala Lajpatrai college</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2016-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="fa fa-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">8355952505</span>
+                        </div>
+                    </div>
+                     <div class="contact__information">
+                        <i class="fa fa-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email Me</h3>
+                            <span class="contact__subtitle">vishalchinta27@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="fa fa-map contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Mumbai - india</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                         <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                         <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                         <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="Message" id="Message" cols="0" rows="7"  class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="fa fa-right-arrow button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+      </main>
+      <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Vishal</h1>
+                        <span class="footer__subtitle">Full Stack Developer</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                         <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                         <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                         <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="" target="_blank" class="footer__social">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__social">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__social">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__social">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copy">&#169; Vishal;</p>
+            </div>
+
+      </footer>
+    <!-- <canvas id="canvas" width="1366" height="162" style="width: 1366px; height: 100%;"></canvas> -->
+
+      <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js"></script> -->
+      <script src="script.js"></script>
+      <!-- <script src="threejs.js"></script> -->
+</body>
+</html>
