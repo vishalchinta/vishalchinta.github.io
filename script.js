@@ -86,3 +86,10 @@ themeButton.addEventListener("click" , () => {
     localStorage.setItem("selected-theme",getCurrentTheme());
     localStorage.setItem("selected-icon",getCurrentIcon());
 })
+
+
+const downloadCv = document.getElementById("Resume-Button");
+
+downloadCv.addEventListener('click',function(){
+    window.open("https://drive.google.com/file/d/17RnXHEMxNrE_TaAI_asOKOqkTAPLcXm-/view?usp=share_link")
+});
