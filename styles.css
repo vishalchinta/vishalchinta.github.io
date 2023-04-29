@@ -456,9 +456,9 @@ text-align: center;
 }
 
 .skill-img{
-      display: block;
-        margin: 25px auto 5px auto;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    display: block;
+    margin: 25px auto 5px auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
     padding: 15px 15px;
     height: 150px;
     background: white;
@@ -638,7 +638,7 @@ text-align: center;
 
 .timeline_container{
     display: block;
-    width: 80%;
+    width: 90%;
     margin: 150px auto;
 }
 
@@ -648,7 +648,7 @@ text-align: center;
 
 .card{
     width: 45%;
-    padding: 30px;
+    padding: 15px;
     border-radius: 10px;
     color: #fff;
     display: block;
@@ -1027,6 +1027,13 @@ color: var(--first-color-lighter);
     grid-column:initial;
   }
 
+  .timeline_container{
+    width: 80%;
+  }
+
+  .card{
+    padding: 30px;
+  }
   .home__img{
       order:1;
       justify-self: center;
