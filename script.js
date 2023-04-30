@@ -93,3 +93,18 @@ const downloadCv = document.getElementById("Resume-Button");
 downloadCv.addEventListener('click',function(){
     window.open("https://drive.google.com/file/d/17RnXHEMxNrE_TaAI_asOKOqkTAPLcXm-/view?usp=share_link")
 });
+const submit = document.getElementById("submit__form");
+const form = document.querySelector("form");
+
+form.addEventListener("submit",function (e) {
+    e.preventDefault();
+     var res = Email.send({
+        SecureToken: "8960ccd5-5aa6-4c0d-bc55-e555dafd37aa",
+        To: 'vishalchinta27@gmail.com',
+        From: form.elements["email"].value,
+        Subject: "Contact Us By Customer",
+        Body: form.elements["name"].value + "<br>" + form.elements["project"].value + "<br>" + form.elements["message"].value + "<br>" ,
+      }).then(function (message) {
+          alert("mail sent successfully")
+    });
+});

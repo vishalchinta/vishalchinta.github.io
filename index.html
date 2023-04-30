@@ -238,30 +238,30 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form id="Contact__Form" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="name" required class="contact__input">
                         </div>
                          <div class="contact__content">
                             <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" name="email" required class="contact__input">
                         </div>
                          <div class="contact__content">
                             <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" name="project" required class="contact__input">
                         </div>
                          <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="Message" id="Message" cols="0" rows="7"  class="contact__input"></textarea>
+                            <textarea name="Message" name="message" required id="message" cols="0" rows="7"  class="contact__input"></textarea>
                         </div>
 
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button type="submit" id="submit__form" class="button button--flex">
                                 Send Message
                                 <i class="fa fa-right-arrow button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -308,6 +308,7 @@
             </div>
 
       </footer>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- <canvas id="canvas" width="1366" height="162" style="width: 1366px; height: 100%;"></canvas> -->
 <!-- /////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 -->
       <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
