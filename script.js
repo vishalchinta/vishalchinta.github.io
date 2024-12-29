@@ -1,110 +1,107 @@
-/* ===============Menu show Y hidden=========  */
-const navMenu = document.getElementById("nav-menu");
-navToggle = document.getElementById("nav-toggle");
-navClose = document.getElementById("nav-close");
+$(document).ready(function () {
+  // Skills data structure
+  const skills = {
+    programming: [
+      { name: "C#", icon: "/assets/csharp_logo.png" },
+      { name: "JavaScript", icon: "/assets/js_logo.png" },
+      { name: "TypeScript", icon: "/assets/typescript_logo.png" },
+      { name: "HTML5", icon: "/assets/html_logo.png" },
+      { name: "CSS3", icon: "/assets/css_logo.png" },
+      { name: "Dart", icon: "/assets/dart_logo.png" },
+      { name: "Azure", icon: "/assets/azure_logo.png" },
+    ],
+    frameworks: [
+      { name: ".NET Core", icon: "/assets/dotnet_logo.png" },
+      { name: "Flutter", icon: "/assets/flutter_logo.png" },
+      { name: "Next.js", icon: "/assets/nextjs_logo.png" },
+      { name: "React.js", icon: "/assets/react_logo.png" },
+      { name: "Angular", icon: "/assets/angular_logo.png" },
+      { name: "Bootstrap", icon: "/assets/bootstrap_logo.png" },
+      { name: "Tailwind", icon: "/assets/tailwind_logo.svg" },
+    ],
+    databases: [
+      { name: "SQL Server", icon: "/assets/sql_logo.png" },
+      { name: "MySQL", icon: "/assets/mysql_logo.png" },
+    ],
+  };
 
-if(navToggle){
-    navToggle.addEventListener('click',()=>{
-        navMenu.classList.add('show-menu');
-    })
-}
+  // Function to create skill items
+  function createSkillItem(skill) {
+    return $("<div>", { class: "skill-item" }).append(
+      $("<div>", { class: "skill-icon" }).append(
+        $("<img>", { src: skill.icon, alt: skill.name })
+      ),
+      $("<span>", { class: "skill-name", text: skill.name })
+    );
+  }
 
-if(navClose){
-    navClose.addEventListener('click',()=>{
-        navMenu.classList.remove('show-menu');
+  // Function to create skill category
+  function createSkillCategory(title, skillsList) {
+    const category = $("<div>", { class: "skills-category" }).append(
+      $("<h2>", { text: title.toUpperCase() })
+    );
+
+    const grid = $("<div>", { class: "skills-grid" });
+
+    skillsList.forEach((skill) => {
+      grid.append(createSkillItem(skill));
     });
-}
 
-/*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+    category.append(grid);
+    return category;
+  }
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
+  // Add each category
+  $("#skills .container").append(
+    createSkillCategory("PROGRAMMING LANGUAGES AND TOOLS", skills.programming),
+    createSkillCategory("FRAMEWORKS", skills.frameworks),
+    createSkillCategory("DATABASES", skills.databases)
+  );
 
-const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header');
+  // Smooth scrolling for navigation links
+  $("nav a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
 
-function toggleSkills(){
-    let itemClass = this.parentNode.className;
-    for(i=0;i<skillsContent.length;i++){
-        skillsContent[i].className = 'skills__content skills__close';
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 60,
+        },
+        800
+      );
     }
-    if(itemClass == 'skills__content skills__close'){
-        this.parentNode.className = 'skills__content skills__open';
-    }
-}
+  });
 
-skillsHeader.forEach((e)=>{
-    e.addEventListener('click',toggleSkills);
-});
+  // Add active class to navigation items on scroll
+  $(window)
+    .scroll(function () {
+      const scrollDistance = $(window).scrollTop();
 
-// ============qualification tabs============
-
-const tabs = document.querySelectorAll('[data-target]'),
-        tabContent = document.querySelectorAll('[data-content]');
- 
-tabs.forEach(tab => {
-    tab.addEventListener('click',()=>{
-        const target = document.querySelector(tab.dataset.target);
-        tabContent.forEach(tabContent=>{
-            tabContent.classList.remove('qualification__active');
-        });
-        target.classList.add('qualification__active');
-        tabs.forEach(tab=>{
-            tab.classList.remove('qualification__active');
-        });
-        tab.classList.add('qualification__active');
+      $("section").each(function (i) {
+        if ($(this).position().top <= scrollDistance + 100) {
+          $("nav ul li a.active").removeClass("active");
+          $("nav ul li a").eq(i).addClass("active");
+        }
+      });
     })
-})
+    .scroll();
 
+  // Mobile menu toggle
+  $(".menu-toggle").on("click", function () {
+    $(".nav-menu").toggleClass("active");
+  });
 
-// ==========================Dark/light theme====================
+  // Close mobile menu when a link is clicked
+  $(".nav-menu a").on("click", function () {
+    $(".nav-menu").removeClass("active");
+  });
 
-const themeButton = document.getElementById("theme-button");
-const darkTheme = "dark-theme";
-const iconTheme = "fa-sun";
-
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
-
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "dark" : "light";
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? "fa-moon" : "fa-sun";
-
-if(selectedTheme){
-    document.body.classList[selectedTheme == "dark" ? "add" : "remove"](darkTheme);
-    themeButton.classList[selectedIcon == "fa-moon" ? "add" : "remove"](iconTheme);
-}
-
-themeButton.addEventListener("click" , () => {
-    document.body.classList.toggle(darkTheme);
-    themeButton.classList.toggle(iconTheme);
-
-    localStorage.setItem("selected-theme",getCurrentTheme());
-    localStorage.setItem("selected-icon",getCurrentIcon());
-})
-
-
-const downloadCv = document.getElementById("Resume-Button");
-
-downloadCv.addEventListener('click',function(){
-    window.open("https://drive.google.com/file/d/17RnXHEMxNrE_TaAI_asOKOqkTAPLcXm-/view?usp=share_link")
-});
-const submit = document.getElementById("submit__form");
-const form = document.querySelector("form");
-
-form.addEventListener("submit",function (e) {
-    e.preventDefault();
-     var res = Email.send({
-        SecureToken: "8960ccd5-5aa6-4c0d-bc55-e555dafd37aa",
-        To: 'vishalchinta27@gmail.com',
-        From: form.elements["email"].value,
-        Subject: "Contact Us By Customer",
-        Body: form.elements["name"].value + "<br>" + form.elements["project"].value + "<br>" + form.elements["message"].value + "<br>" ,
-      }).then(function (message) {
-          alert("mail sent successfully")
-    });
+  // Close mobile menu when clicking outside
+  $(document).on("click", function (event) {
+    if (!$(event.target).closest("nav").length) {
+      $(".nav-menu").removeClass("active");
+    }
+  });
 });

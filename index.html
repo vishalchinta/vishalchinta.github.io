@@ -1,319 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles.css">
-    <title>Vishal Chinta</title>
-</head>
-<body class="o-start dark-theme">
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Vishal</a>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="fa-solid fa-house nav__icon"></i>
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="fa-regular fa-address-card nav__icon"></i>
-                                About  
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="fa-solid fa-bars-progress nav__icon"></i>
-                            Skills
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#qualification" class="nav__link">
-                            <i class="fa-solid fa-briefcase nav__icon"></i>
-                            My Journey  
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="fa-regular fa-address-book nav__icon"></i>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="fa-solid fa-xmark nav__close"  id="nav-close" ></i>
-            </div>
-            <div class="nav__btns">
-                <!-- Theme Change button -->
-                <i class="fa-solid fa-moon change-theme" id="theme-button"></i>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal Chinta - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Vishal Chinta</div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <div class="home__social">
-                    <a href="https://www.linkedin.com/in/vishal-chinta-b207831ba/" target="_blank" class="home__social-icon">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/vishalchinta" target="_blank" class="home__social-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="mailto: vishalchinta27@gmail.com" target="_blank" class="home__social-icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </a>
-                    </div>
-                    <div class="home__img">
-                            <image class="home__blob-img" src="assets/avatar.png"></image>
+      <section id="home">
+        <div class="container">
+          <h1>Vishal Chinta</h1>
+          <h2>Software Developer</h2>
+          <p>
+            Dedicated and versatile with 3 years of comprehensive experience in
+            full-stack and cross-platform development.
+          </p>
+          <div class="social-icons">
+            <a href="https://github.com/vishalchinta" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/vishal-chinta-b207831ba/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=8355952505&text=Hello"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="mailto:vishalchinta27@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </section>
 
-                        <!-- <svg class="home__blob" id="10015.io" viewBox="0 0 2400 2280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-	                        <path class="home__blob-svg" fill="#474bff" d="M347,345Q308,450,214.5,388.5Q121,327,120.5,240Q120,153,212.5,96Q305,39,345.5,139.5Q386,240,347,345Z" />
-                        </svg> -->
-                    </div>
-                    <div class="home__data">
-                        <h1 class="home__title">Hi, I'am Vishal</h1>
-                        <h3 class="home__subtitle">Full stack developer</h3>
-                        <p class="home__description">High level experience in full stack development</p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me<i class="message"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            Proven expertise in .NET Core, Azure, Reactjs, Next.js, and Flutter,
+            with robust backend capabilities in SQL and MySQL. Proficient in
+            cloud technologies with Azure and version control using Git.
+            Demonstrates strong ability to design, develop, and deploy scalable
+            web and mobile applications across diverse technological ecosystems.
+          </p>
+        </div>
+      </section>
 
-        <section class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
-            <div class="about__container container grid">
-                <img src="" alt="" class="about__img">
-                <div class="about__data">
-                    <div style="margin-bottom: 2rem;">Hello, I'm a full stack developer with 1.5 years of experience working as software developer. I have a passion for developing innovative and effective software solutions that meet the needs of users and clients alike.</div>
-                <div style="margin-bottom: 2rem;">As a developer, I'm committed to writing high-quality, maintainable code that is easy to understand and modify. I'm constantly seeking out new technologies and techniques to improve my skills and stay up to date with the latest trends in the industry.</div>
-                    <div class="about__buttons">
-                        <a href="/assets/vishal nageshwar chinta.pdf" id="Resume-Button" download="vishal_nageshwar_chinta.pdf" target="_blank" class="button button--flex">
-                            Download CV<i class="fa-solid fa-download button__icon"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section id="experience">
+        <div class="container">
+          <h2>Work Experience</h2>
+          <div class="job">
+            <h3>Software Developer</h3>
+            <p>Alynn Technologies Private Limited, Mumbai</p>
+            <p>Dec 2021 - Present</p>
+            <ul>
+              <li>
+                Designed and implemented advanced bill generation capabilities,
+                including detailed cost breakdowns and automated PDF generation.
+              </li>
+              <li>
+                Developed a subscription-based store integrated with Razorpay
+                payment gateway.
+              </li>
+              <li>
+                Architected and delivered a mobile application using Flutter,
+                mirroring all web features.
+              </li>
+              <li>
+                Engineered a wallet system for real-time project fund
+                management.
+              </li>
+              <li>
+                Played a key role in transitioning the platform from .NET Core
+                to Next.js.
+              </li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>Desktop Support Engineer</h3>
+            <p>IT Source Technologies (client: Wipro), Mumbai</p>
+            <p>Nov 2019 - Nov 2021</p>
+            <ul>
+              <li>Assisted clients with hardware and software issues.</li>
+              <li>Provided on-site or remote technical assistance.</li>
+              <li>
+                Installed and upgraded software, and troubleshooted basic IT
+                issues.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My techincal skills</span>
-            <div class="skills__container container grid">
-        <div class="skill-card">
-            <img src="assets/html_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">HTML</h1>
-           
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2>Technical Skills</h2>
         </div>
-        <div class="skill-card">
-            <img src="assets/css_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">CSS</h1>
-          
-        </div>
-        <div class="skill-card">
-            <img src="assets/js_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">JS</h1>
-           
-        </div>
-          <div class="skill-card">
-            <img src="assets/jquery_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">JQuery</h1>
-            
-        </div>
-        <div class="skill-card">
-            <img src="assets/react_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">React.Js</h1>
-            
-        </div>
-        <div class="skill-card">
-            <img src="assets/csharp_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">C#</h1>
-            
-        </div>
-        <div class="skill-card">
-            <img src="assets/dotnet_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">.Net</h1>
-        </div>
-        <div class="skill-card">
-            <img src="assets/sql_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">SQL</h1>
-            
-        </div>
-        <div class="skill-card">
-            <img src="assets/dart_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">Dart</h1>
-           
-        </div>
-        <div class="skill-card">
-            <img src="assets/flutter_logo.png" class="skill-img" alt="">
-            <h1 class="skills__title">Flutter</h1>
-           
-        </div>
-            </div>
-        </section>  
+      </section>
 
-        <section class="qualification section" id="qualification">
-            <h2 class="section__title">Education and Experience</h2>
-            <span class="section__subtitle">My personal journey</span>
-            <div class="timeline_container">
-<div class="timeline">
-    <div class="card">
-        <div class="card-body">
-            <h1 class="qualification__title">2021 - Present</h1>
-            <h1 class="qualification__title">Software Developer</h1>
-            <p class="qualification__subtitle">Karoot Software Solutions l Mumbai</p>
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project">
+            <h3>iBricks Web Application Migration</h3>
+            <p>
+              Successfully migrated the iBricks web application from .NET Core
+              to Next.js to enhance performance, scalability, and
+              maintainability.
+            </p>
+            <p>
+              Technologies: Next.js, React, Shadcn, MySQL, GitHub, Vercel,
+              Razorpay, Shiprocket
+            </p>
+          </div>
+          <div class="project">
+            <h3>iBricks Contractor Management System</h3>
+            <p>
+              Developed a feature-rich application to assist civil contractors
+              in managing projects efficiently.
+            </p>
+            <p>
+              Technologies: .NET Core (C#) Web App, MS SQL, HTML, CSS, jQuery,
+              Reactjs, Visual Studio, GitHub, Azure App Service, Azure SQL
+              Server, Azure Blob Storage, Razorpay, Shiprocket, Jira
+            </p>
+          </div>
+          <div class="project">
+            <h3>iBricks Mobile App</h3>
+            <p>
+              Developed a feature-rich mobile application using Flutter with all
+              features mirrored from the web platform.
+            </p>
+            <p>
+              Technologies: .NET Core (C#) Web Api, MS SQL, Flutter, Dart, VS
+              Code, GitHub, Azure App Service, Azure SQL Server, Azure Blob
+              Storage, Razorpay, Shiprocket, Jira
+            </p>
+          </div>
         </div>
-    </div>
-     <div class="card">
-        <div class="card-body">
-            <h1 class="qualification__title">2019 - 2021</h1>
-            <h1 class="qualification__title">Desktop Support Engineer</h1>
-            <p class="qualification__subtitle">IT Source Technologies l Mumbai</p>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>Email: vishalchinta27@gmail.com</p>
+          <p>Phone: +91-8355952505</p>
+          <p>Location: Mumbai</p>
         </div>
-    </div>
-     <div class="card">
-        <div class="card-body">
-            <h1 class="qualification__title">2016 - 2019</h1>
-            <h1 class="qualification__title">BSC-IT</h1>
-            <p class="qualification__subtitle">Lala Lajpatrai College l Mumbai</p>
-        </div>
-    </div>
-     <div class="card">
-        <div class="card-body">
-            <h1 class="qualification__title">2014 - 2016</h1>
-            <h1 class="qualification__title">HSC</h1>
-            <p class="qualification__subtitle">Andhra Education High School l Mumbai</p>
-        </div>
-    </div>
-     <div class="card">
-        <div class="card-body">
-            <h1 class="qualification__title">2012</h1>
-            <h1 class="qualification__title">SSC</h1>
-            <p class="qualification__subtitle">Andhra Education High School l Mumbai</p>
-        </div>
-    </div>
-</div>
-</div>
-        </section>
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
+      </section>
+    </main>
 
-            <div class="contact__container container grid">
-                <div>
-                    <div class="contact__information">
-                        <i class="fa fa-phone contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">8355952505</span>
-                        </div>
-                    </div>
-                     <div class="contact__information">
-                        <i class="fa fa-envelope contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Email Me</h3>
-                            <span class="contact__subtitle">vishalchinta27@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="fa fa-map contact__icon"></i>
-
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Mumbai - india</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form id="Contact__Form" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" name="name" required class="contact__input">
-                        </div>
-                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" name="email" required class="contact__input">
-                        </div>
-                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" name="project" required class="contact__input">
-                        </div>
-                         <div class="contact__content">
-                            <label for="" class="contact__label">Message</label>
-                            <textarea name="Message" name="message" required id="message" cols="0" rows="7"  class="contact__input"></textarea>
-                        </div>
-
-                        <div>
-                            <button type="submit" id="submit__form" class="button button--flex">
-                                Send Message
-                                <i class="fa fa-right-arrow button__icon"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-      </main>
-      <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Vishal</h1>
-                        <span class="footer__subtitle">Full Stack Developer</span>
-                    </div>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#home" class="footer__link">Home</a>
-                        </li>
-                         <li>
-                            <a href="#skills" class="footer__link">Skills</a>
-                        </li>
-                         <li>
-                            <a href="#about" class="footer__link">About</a>
-                        </li>
-                         <li>
-                            <a href="#contact" class="footer__link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/vishal-chinta-b207831ba/" target="_blank" class="footer__social">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/vishalchinta" target="_blank" class="footer__social">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="mailto: vishalchinta27@gmail.com" target="_blank" class="footer__social">
-                            <i class="fa-regular fa-envelope"></i>
-                        </a>
-                        <a href="https://www.instagram.com/vishalchinta/" target="_blank" class="footer__social">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                <p class="footer__copy">&#169; Vishal;</p>
-            </div>
-
-      </footer>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- <canvas id="canvas" width="1366" height="162" style="width: 1366px; height: 100%;"></canvas> -->
-      <!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/101/three.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js"></script> -->
-      <script src="script.js"></script>
-      <!-- <script src="threejs.js"></script> -->
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
